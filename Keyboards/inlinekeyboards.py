@@ -11,7 +11,7 @@ keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton(text="Написать менеджеру", callback_data='dislike')
         ],
         [
-            InlineKeyboardButton(text="Частозадаваемые вопросы", callback_data='dislike')
+            InlineKeyboardButton(text="Часто задаваемые вопросы", callback_data='dislike')
         ]
     ]
 )
@@ -19,13 +19,13 @@ keyboard = InlineKeyboardMarkup(
 keyboard_contacts = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="Назад", callback_data='contacts'),
+            InlineKeyboardButton(text="Назад", callback_data='first_inline_menu'),
         ],
         [
             InlineKeyboardButton(text="Написать менеджеру", callback_data='dislike')
         ],
         [
-            InlineKeyboardButton(text="Частозадаваемые вопросы", callback_data='dislike')
+            InlineKeyboardButton(text="Часто задаваемые вопросы", callback_data='dislike')
         ]
     ]
 )
