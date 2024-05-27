@@ -11,6 +11,7 @@ from aiogram.client.bot import DefaultBotProperties
 from Keyboards.inlinekeyboards import keyboard_contacts
 from handlers.first_menu import get_first_inline_menu
 from handlers.get_location import get_location
+from handlers.menu_bot import get_menu_price
 from handlers.start import get_start
 from utils import set_bot_commands
 
@@ -32,6 +33,7 @@ dp.message.register(get_start, Command(commands="start"))
 dp.callback_query.register(get_location, F.data == "location")
 dp.callback_query.register(get_start, F.data == "contacts")
 dp.callback_query.register(get_first_inline_menu, F.data == "first_inline_menu")
+dp.callback_query.register(get_menu_price, F.data == "menu_price")
 
 # dp.message.register(location, F.data == "location")
 async def start():
